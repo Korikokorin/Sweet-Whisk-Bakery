@@ -1,0 +1,297 @@
+@font-face {
+    font-family: Peter Quincy;
+    src: url('Peter Quincy.otf');
+  }
+  
+  @font-face {
+    font-family: Responsible;
+    src: url('Responsible.ttf');
+  }
+  
+  @font-face {
+    font-family: Mainstay;
+    src: url('Mainstay.otf');
+  }
+  
+  @font-face {
+    font-family: Royalacid;
+    src: url('Royalacid.ttf');
+  }
+  
+  @font-face {
+    font-family: Royalacid O;
+    src: url('Royalacid_o.ttf');
+  }
+  
+  body {
+    background-color: #ffedb8;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    border-bottom: 10px solid #ffbf00;
+    padding-bottom: 10px;
+    background-color: #ffde7d;
+  }
+  
+  .nav-link {
+    color: #000000;
+    font-family: Calibri;
+    margin: 0 10px;
+    padding: 5px 10px;
+    display: inline-block;
+  }
+  
+  .nav-link:hover {
+    border-color: black;
+    /* Change border color to transparent with 20% opacity */
+  }
+  
+  h1 {
+    font-family: Mainstay;
+    color: #000000;
+    text-align: center;
+  }
+  
+  h3 {
+    margin-left: 100px;
+    font-family: Mainstay;
+    color:#000000;
+    text-align: left;
+  }
+
+  .nav-link {
+    color: #000000;
+    font-family: Royalacid O;
+    margin: 0 10px;
+    padding: 5px 10px;
+    display: inline-block;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  form.indented-paragraph {
+    margin-left: 45px;
+    margin-right: 35px;
+  }
+  
+  p.indented-paragraph {
+    margin-left: 45px;
+    margin-right: 35px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Royalacid;
+  }
+
+  p.main-content {
+    margin-left: 150px;
+    color: #000000;
+    font-family: Royalacid;
+    font-size: 15px;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup:target {
+    display: flex;
+  }
+  
+  .popup-content {
+    position: relative;
+    background-color: floralwhite;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .popup-content img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #000000;
+    font-size: 30px;
+    text-decoration: none;
+  }
+  
+  .close:hover {
+    color: red;
+  }
+  
+  .lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lightbox:target {
+    display: flex;
+  }
+  
+  .lightbox-content {
+    position: relative;
+  }
+  
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .lightbox .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #000000;
+    font-size: 30px;
+    text-decoration: none;
+  }
+  
+  .lightbox .close:hover {
+    color: red;
+  }
+  
+  .footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffbf00;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    transition: transform 0.5s ease; 
+    z-index: 100;
+  }
+  
+  .footer.hidden {
+    transform: translateY(100%); 
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  .overlay-container {
+    position: relative;
+  }
+  
+  .overlay-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffe596;
+    z-index: 1;
+  }
+  
+  .indented-paragraph,
+  .nav-link {
+    position: relative;
+    z-index: 2;
+  }
+  
+  #blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid black;
+  }
+  
+  .blog-heading span {
+    color: red;
+  }
+  
+  .blogcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+  }
+  
+  .blogbox {
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 20px;
+  }
+  
+  .blogimg {
+    width: 100%;
+    height: auto;
+  }
+  
+  .blog-img img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center
+  }
+  
+  .blogtext {
+    font-family: mainstay;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .blogtext span {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+  }
+  
+  .blogtext .blogtitle {
+    font-family: royalacid;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+  }
+  
+  .blogtext .blogtitle:hover {
+    color: red;
+  }
+
+.gallery-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 20px;
+    display: flex; /* Ensures that gallery items are displayed in a row */
+    justify-content: center;
+    scroll-snap-type: x mandatory; /* Enables snapping behavior for horizontal scrolling */
+    scroll-padding: 10px; /* Adds padding to the scrolling area */
+}
+
+.gallery {
+    scroll-snap-align: start; /* Aligns the start of each image with the scroll container */
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+    scroll-snap-stop: always; /* Ensures that each image stops at the same position */
+}
